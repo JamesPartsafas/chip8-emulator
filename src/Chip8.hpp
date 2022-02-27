@@ -35,6 +35,7 @@ private:
     std::uniform_int_distribution<uint8_t> randByte;
 
     //Opcodes
+    #pragma region
 
     //Do nothing
     void OP_NULL();
@@ -140,4 +141,6 @@ private:
 
     //LD Vx, [I] (Read registers V0 to Vx starting at location I)
     void OP_Fx65();
+
+    #pragma endregion
 };
