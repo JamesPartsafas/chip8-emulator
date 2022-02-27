@@ -1,6 +1,8 @@
 CC=g++
 SRC=src
-EXE=main.exe
+EXECUTABLE=main.exe
 
-main: $(SRC)/Main.cpp
-	$(CC) -o $(EXE) $(SRC)/Main.cpp
+all: Main
+
+Main:
+	$(CC) -o $(EXECUTABLE) $(SRC)/Main.cpp $(SRC)/Chip8.cpp
