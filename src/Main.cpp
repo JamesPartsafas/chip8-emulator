@@ -5,6 +5,8 @@
 
 int main(int argc, char** argv)
 {
+    std::cout << "Welcome to the Chip-8 Emulator!\n";
+    
     if (argc != 4)
     {
         std::cerr << "Argument usage: " << argv[0] << "<Scale> <Delay> <ROM>\n";

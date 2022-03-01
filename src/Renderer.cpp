@@ -5,7 +5,7 @@ Renderer::Renderer(char const* title, int windowWidth, int windowHeight, int tex
 {
     SDL_Init(SDL_INIT_VIDEO);
 
-    sdlWindow = SDL_CreateWindow(title, 0, 0, windowWidth, windowHeight, SDL_WINDOW_SHOWN);
+    sdlWindow = SDL_CreateWindow(title, 100, 100, windowWidth, windowHeight, SDL_WINDOW_SHOWN);
 
     sdlRenderer = SDL_CreateRenderer(sdlWindow, -1, SDL_RENDERER_ACCELERATED);
 
